@@ -30,7 +30,7 @@ paths:
                     content:
                         application/json:
                             schema:
-                                $ref: '#/components/schemas/ProductReviews'
+                                $ref: '#/components/schemas/Reviews'
                             examples:
                                 product_1:
                                     value:
@@ -56,7 +56,7 @@ paths:
             description: 'Get reviews for a product, including review text and possibly ratings information.'
 components:
     schemas:
-        ProductReviews:
+        Reviews:
             description: Object containing reviews for a product
             required:
                 - id
@@ -64,9 +64,8 @@ components:
             type: object
             properties:
                 id:
-                    format: int32
                     description: Product id
-                    type: integer
+                    type: string
                 reviews:
                     description: List of reviews
                     type: array
