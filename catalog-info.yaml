@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "reviews"
+  title: "reviews"
+  description: "Reviews API"
+  annotations:
+    backstage.io/spectral-ruleset-url: https://raw.githubusercontent.com/davgordo/spectral-rules/main/ruleset.yaml
+spec:
+  type: openapi
+  system: system:default/bookinfo
+  owner: "group:default/backstage-admins"
+  lifecycle: experimental
+  definition:
+    $openapi: https://github.com/davgordo/bookinfo-reviews-api/blob/main/specification.yaml

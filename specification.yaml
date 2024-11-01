@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: reviews
+  description: |-
+    Reviews API
+  version: '1'
+servers:
+  - url: "http://localhost:8080"
+  - url: "https://microcks-microcks.apps.cluster-p28j5.p28j5.sandbox1687.opentlc.com/rest/reviews/1"
+paths: {}
